@@ -1,0 +1,13 @@
+.editorClassName {
+  min-height: 300px;
+  border: 1px solid #d8d6de;
+  padding: 10px;
+}
+
+.editorClassName .DraftEditor-root {
+  min-height: 270px;
+}
+
+.editorClassName .public-DraftEditor-content {
+  min-height: 270px;
+}
