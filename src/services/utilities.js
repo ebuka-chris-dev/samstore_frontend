@@ -1,5 +1,5 @@
 
-import { API_URI, HTTP_URI, USER_COOKIE } from './constants';
+import { API_URI, USER_COOKIE } from './constants';
 import SSRStorage from './storage';
 const parseJSON = response => response.json();
 export const isUnset = o => typeof o === 'undefined' || o === null;
@@ -68,7 +68,7 @@ export const request = async (url, method, authed = false, data) => {
 };
 export const httpRequest = async (url, method, data) => {
 
-    const response = await fetch(`${HTTP_URI}/${url}`, {
+    const response = await fetch(`${API_URI}/${url}`, {
         method: method,
         headers: { ...defaultHeaders },
         body: JSON.stringify(data),
